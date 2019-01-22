@@ -16,15 +16,15 @@ var randomNumber = function(max) {
 var lowercase = 'abcdefghijklmnopqrstuvwxyz',
 	uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
 	numbers = '0123456789',
-	symbols = '!@#$%^&*()+_-=}{[]|:;"/?.><,`~',
+	symbols = '!@#$&',
 	similarCharacters = /[ilLI|`oO0]/g,
 	strictRules = [
 		{ name: 'lowercase', rule: /[a-z]/ },
 		{ name: 'uppercase', rule: /[A-Z]/ },
 		{ name: 'numbers', rule: /[0-9]/ },
-		{ name: 'symbols', rule: /[!@#$%^&*()+_\-=}{[\]|:;"/?.><,`~]/ }
+		{ name: 'symbols', rule: /[!@#$&]/ }
 	];
-
+	
 var generate = function(options, pool) {
 	var password = '',
 		optionsLength = options.length,
